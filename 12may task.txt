@@ -1,0 +1,40 @@
+using System;
+
+namespace _12maytaskk
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] num = { 12, 13, 14 };
+            bool result = false;
+            try
+            {
+                Console.Write("yasinizi daxil edin: ");
+                string ageStr = Console.ReadLine();
+                int age = Int32.Parse(ageStr);
+
+                for (int i = 0; i < num.Length; i++)
+                {
+                    if (age == num[i])
+                    {
+                        result = true;
+                        break;
+                    }
+
+
+                }
+                Console.WriteLine(result);
+            }
+            catch
+            {
+                Console.WriteLine("yasinizi duzgun daxil edin");
+            }
+            finally
+            {
+                Console.WriteLine("tesekkurler");
+            }
+            }
+
+    }
+}
